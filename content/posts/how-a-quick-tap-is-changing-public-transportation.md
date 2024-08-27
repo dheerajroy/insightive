@@ -3,6 +3,7 @@ title = 'How a Quick Tap Is Changing Public Transportation'
 date = 2024-08-28T04:42:00+05:30
 author = 'D Dheeraj'
 draft = false
+tags: ["Technology", "Finance", "Contactless Transit"]
 +++
 
 Imagine it's a bustling Monday morning. The city is waking up, and so are you, with your eyes barely open and a coffee cup in hand. You head to the nearest subway station, ready to dive into the daily commute. But instead of fumbling for change or waiting in line to buy a ticket, you simply pull out your card or smartphone and give it a quick tap on the turnstile. A familiar beep, and you're through—no hassle, no delay. This is the beauty of **contactless transit systems**—a technology that's quietly revolutionizing the way we move through our cities.
