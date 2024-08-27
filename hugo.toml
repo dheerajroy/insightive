@@ -1,0 +1,9 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Insightive'
+theme = 'papermod'
+
+[pagination]
+  disableAliases = false
+  pagerSize = 10
+  path = 'page'
