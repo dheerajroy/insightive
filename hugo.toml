@@ -7,3 +7,8 @@ theme = 'papermod'
   disableAliases = false
   pagerSize = 10
   path = 'page'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
