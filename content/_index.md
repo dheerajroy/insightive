@@ -1,6 +1,6 @@
 ---
 title: "Welcome to Insightive"
-description: "A blog about self-development and technology."
+description: "Welcome to Insightive! We make exploring the latest tech trends a breeze. From groundbreaking innovations to the nitty-gritty of how things work, we simplify complex topics and make them exciting. Dive in, discover, and geek out with us as we turn tech into a fun adventure!"
 type: "homepage"
 ---
 
