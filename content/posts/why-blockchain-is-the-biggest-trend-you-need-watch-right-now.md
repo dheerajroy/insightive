@@ -1,6 +1,7 @@
 +++
 title = "Why Blockchain Is the Biggest Trend You Need Watch Right Now"
 date = 2024-08-30T03:02:34+05:30
+author = "D Dheeraj"
 draft = false
 tags = ["blockchain", "technology", "innovation"]
 +++
