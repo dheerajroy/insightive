@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tags/blockchain/</loc>
+    <lastmod>2024-08-30T03:02:34+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/innovation/</loc>
+    <lastmod>2024-08-30T03:02:34+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-08-30T03:02:34+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-08-30T03:02:34+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/technology/</loc>
+    <lastmod>2024-08-30T03:02:34+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-08-30T03:02:34+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/why-blockchain-is-the-biggest-trend-you-need-watch-right-now/</loc>
+    <lastmod>2024-08-30T03:02:34+05:30</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/contactless-transit/</loc>
     <lastmod>2024-08-28T04:42:00+05:30</lastmod>
   </url><url>
@@ -9,18 +30,6 @@
     <lastmod>2024-08-28T04:42:00+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/how-a-quick-tap-is-changing-public-transportation/</loc>
-    <lastmod>2024-08-28T04:42:00+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-08-28T04:42:00+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2024-08-28T04:42:00+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/technology/</loc>
-    <lastmod>2024-08-28T04:42:00+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2024-08-28T04:42:00+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/digital-payments/</loc>

@@ -14,18 +14,13 @@ Welcome to **Insightive**. This README will guide you through writing and adding
 
 ### Writing an Article
 
-1. **Navigate to the Content Directory**: 
-   ```bash
-   cd insightive/content
-   ```
-
-2. **Create a New Article**:
+1. **Create a New Article**:
    Generate a new Markdown file in the `content/posts` directory. Use a descriptive filename with the `.md` extension. For example:
    ```bash
    hugo new posts/my-new-article.md
    ```
 
-3. **Edit the Article**:
+2. **Edit the Article**:
    Open the newly created Markdown file in your preferred editor. Update the front matter and article content. Example front matter:
    ```markdown
    ---
@@ -38,7 +33,7 @@ Welcome to **Insightive**. This README will guide you through writing and adding
 
    Customize the `title`, `date`, and other fields as needed. Write your article content below the front matter.
 
-4. **Preview Your Changes**:
+3. **Preview Your Changes**:
    Start the Hugo server to preview your article locally:
    ```bash
    hugo server -D
