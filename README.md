@@ -1,6 +1,6 @@
 # Insightive README
 
-Welcome to the **Insightive** project! This README will guide you through writing and adding articles, as well as contributing via pull requests (PRs). Our site is built with **Hugo** and features the sleek **PaperMod** theme.
+Welcome to the **Insightive**. This README will guide you through writing and adding articles, as well as contributing via pull requests (PRs). Our site is built with **Hugo** and features the sleek **PaperMod** theme.
 
 ## Getting Started
 
