@@ -3,7 +3,7 @@ title = 'Torrents Explained: The Tech Behind the Ultimate File Sharing Method'
 date = 2024-09-04T20:50:30+05:30
 author = 'D Dheeraj'
 draft = false
-tags = ["Technology", "Finance", "UPI", "Digital Payments"]
+tags = ["Technology", "Torrents", "File Sharing"]
 +++
 
 Picture this: It’s a Friday night, and you’re excited to watch the latest episode of your favorite TV show. But when you go online, you realize the streaming service you use doesn’t have it yet. A friend suggests downloading it using a torrent, and that’s when you start to wonder—what exactly is a torrent, and how does it work?
