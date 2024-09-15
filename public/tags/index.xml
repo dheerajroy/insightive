@@ -6,34 +6,48 @@
     <description>Recent content in Tags on Insightive</description>
     <generator>Hugo -- 0.133.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Sep 2024 20:50:30 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 16 Sep 2024 01:45:31 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Digital Payments</title>
-      <link>http://localhost:1313/tags/digital-payments/</link>
-      <pubDate>Wed, 04 Sep 2024 20:50:30 +0530</pubDate>
-      <guid>http://localhost:1313/tags/digital-payments/</guid>
+      <title>GPS</title>
+      <link>http://localhost:1313/tags/gps/</link>
+      <pubDate>Mon, 16 Sep 2024 01:45:31 +0530</pubDate>
+      <guid>http://localhost:1313/tags/gps/</guid>
       <description></description>
     </item>
     <item>
-      <title>Finance</title>
-      <link>http://localhost:1313/tags/finance/</link>
-      <pubDate>Wed, 04 Sep 2024 20:50:30 +0530</pubDate>
-      <guid>http://localhost:1313/tags/finance/</guid>
+      <title>Map</title>
+      <link>http://localhost:1313/tags/map/</link>
+      <pubDate>Mon, 16 Sep 2024 01:45:31 +0530</pubDate>
+      <guid>http://localhost:1313/tags/map/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Navigation</title>
+      <link>http://localhost:1313/tags/navigation/</link>
+      <pubDate>Mon, 16 Sep 2024 01:45:31 +0530</pubDate>
+      <guid>http://localhost:1313/tags/navigation/</guid>
       <description></description>
     </item>
     <item>
       <title>Technology</title>
       <link>http://localhost:1313/tags/technology/</link>
-      <pubDate>Wed, 04 Sep 2024 20:50:30 +0530</pubDate>
+      <pubDate>Mon, 16 Sep 2024 01:45:31 +0530</pubDate>
       <guid>http://localhost:1313/tags/technology/</guid>
       <description></description>
     </item>
     <item>
-      <title>UPI</title>
-      <link>http://localhost:1313/tags/upi/</link>
+      <title>File Sharing</title>
+      <link>http://localhost:1313/tags/file-sharing/</link>
       <pubDate>Wed, 04 Sep 2024 20:50:30 +0530</pubDate>
-      <guid>http://localhost:1313/tags/upi/</guid>
+      <guid>http://localhost:1313/tags/file-sharing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Torrents</title>
+      <link>http://localhost:1313/tags/torrents/</link>
+      <pubDate>Wed, 04 Sep 2024 20:50:30 +0530</pubDate>
+      <guid>http://localhost:1313/tags/torrents/</guid>
       <description></description>
     </item>
     <item>
@@ -55,6 +69,27 @@
       <link>http://localhost:1313/tags/contactless-transit/</link>
       <pubDate>Wed, 28 Aug 2024 04:42:00 +0530</pubDate>
       <guid>http://localhost:1313/tags/contactless-transit/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Finance</title>
+      <link>http://localhost:1313/tags/finance/</link>
+      <pubDate>Wed, 28 Aug 2024 04:42:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/finance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Digital Payments</title>
+      <link>http://localhost:1313/tags/digital-payments/</link>
+      <pubDate>Wed, 28 Aug 2024 02:40:04 +0530</pubDate>
+      <guid>http://localhost:1313/tags/digital-payments/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>UPI</title>
+      <link>http://localhost:1313/tags/upi/</link>
+      <pubDate>Wed, 28 Aug 2024 02:40:04 +0530</pubDate>
+      <guid>http://localhost:1313/tags/upi/</guid>
       <description></description>
     </item>
   </channel>
