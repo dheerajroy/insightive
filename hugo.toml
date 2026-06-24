@@ -1,0 +1,17 @@
+baseURL = 'https://insightive.xyz/'
+locale = 'en-us'
+title = 'Insightive'
+theme = 'PaperMod'
+
+# Output Formats
+[outputs]
+home = ["HTML", "JSON"]
+
+# Params
+[params]
+defaultTheme = 'dark'
+disableThemeToggle = false
+
+# Search Configuration
+[params.search]
+enable = true
