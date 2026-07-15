@@ -1,0 +1,63 @@
+.footer,
+.top-link {
+    font-size: 12px;
+    color: var(--secondary);
+}
+
+.footer {
+    max-width: calc(var(--main-width) + var(--gap) * 2);
+    margin: auto;
+    padding: calc((var(--footer-height) - var(--gap)) / 2) var(--gap);
+    text-align: center;
+    line-height: 1.6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+    border-top: 1px solid rgba(128, 128, 128, 0.12);
+}
+
+.footer span {
+    margin: 0;
+}
+
+.footer span:last-child {
+    white-space: nowrap;
+}
+
+.footer a {
+    color: inherit;
+    text-underline-offset: 0.25rem;
+    text-decoration: underline;
+    transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.top-link {
+    position: fixed;
+    bottom: 4rem;
+    right: 2rem;
+    z-index: 99;
+    background: var(--tertiary);
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 10px;
+    border-radius: 64px;
+    transition: opacity .3s cubic-bezier(0.4, 0, 1, 1), transform .2s ease;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.top-link,
+.top-link svg {
+    filter: drop-shadow(0px 0px 0px var(--theme));
+}
+
+.footer a:hover,
+.top-link:hover {
+    color: var(--primary);
+}
