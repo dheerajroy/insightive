@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-07-15T23:20:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-07-15T23:20:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/your-brain-was-never-designed-for-infinite-tabs/</loc>
+    <lastmod>2026-07-15T23:20:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/jack-of-all-trades/</loc>
+    <lastmod>2026-06-24T21:36:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/from-thought-to-reality/</loc>
+    <lastmod>2026-06-24T20:39:35+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+  </url>
+</urlset>

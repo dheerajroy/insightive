@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Insightive</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on Insightive</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 Jul 2026 23:20:00 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Your Brain Was Never Designed for Infinite Tabs</title>
+      <link>http://localhost:1313/posts/your-brain-was-never-designed-for-infinite-tabs/</link>
+      <pubDate>Wed, 15 Jul 2026 23:20:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/your-brain-was-never-designed-for-infinite-tabs/</guid>
+      <description>&lt;p&gt;There was a time when boredom was unavoidable.&lt;/p&gt;
+&lt;p&gt;You stood in queues staring into space. You looked out of the car window during long drives. You sat on your bed doing absolutely nothing before falling asleep. Your mind wandered, connected ideas, replayed conversations, imagined futures, and solved problems without you even realizing it.&lt;/p&gt;
+&lt;p&gt;Today, those moments barely exist.&lt;/p&gt;
+&lt;p&gt;The second our brain experiences even a hint of silence, we reach for our phone. One notification becomes five minutes on Instagram. One YouTube video somehow becomes eight. You open your laptop to reply to an email and end up with twenty-three browser tabs, three unfinished articles, a Reddit thread you&amp;rsquo;ll &amp;ldquo;come back to,&amp;rdquo; and a course that&amp;rsquo;s been sitting at 14% completion since January.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Jack of All Trades: Why Having a Core Skill Matters More Than Picking a Side</title>
+      <link>http://localhost:1313/posts/jack-of-all-trades/</link>
+      <pubDate>Wed, 24 Jun 2026 21:36:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/jack-of-all-trades/</guid>
+      <description>&lt;p&gt;We have all heard the old saying that a jack of all trades is a master of none. It is usually thrown around as a warning. People use it to tell you to pick a lane, stick to one thing, and become a hyper specialized expert if you ever want to find true success.&lt;/p&gt;
+&lt;p&gt;But the people who repeat this phrase almost always leave off the second half of the actual historical quote. The full saying is actually: A jack of all trades is a master of none, but oftentimes better than a master of one.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>From Thought to Reality: The Self Trust Formula for Achieving Exactly What You Want</title>
+      <link>http://localhost:1313/posts/from-thought-to-reality/</link>
+      <pubDate>Wed, 24 Jun 2026 20:39:35 +0530</pubDate>
+      <guid>http://localhost:1313/posts/from-thought-to-reality/</guid>
+      <description>&lt;p&gt;We have a massive design flaw in the way we look at ourselves versus how we look at the rest of the world.&lt;/p&gt;
+&lt;p&gt;Think about it. When you look at someone else, maybe a colleague who just got a promotion or an influencer who seems to have their life entirely together, what do you actually see? You see their highlight reel. You see the finished product, the loud announcement, and the tangible result of their work.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
