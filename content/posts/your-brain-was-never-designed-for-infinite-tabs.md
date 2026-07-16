@@ -1,6 +1,7 @@
 +++
 date = '2026-07-15T23:20:00+05:30'
 draft = false
+tags = ["mindset"]
 title = 'Your Brain Was Never Designed for Infinite Tabs'
 author = 'Dheeraj'
 +++

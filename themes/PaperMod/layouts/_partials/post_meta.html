@@ -20,6 +20,14 @@
 
 {{/* Combine all meta information into a single string with separators and render it as HTML.*/}}
 
+{{- if .Params.tags -}}
+    {{- $tags := slice }}
+    {{- range .Params.tags -}}
+        {{- $tags = $tags | append (printf "<span class=\"entry-tag\">%s</span>" . ) -}}
+    {{- end -}}
+    {{- $scratch.Add "meta" $tags -}}
+{{- end -}}
+
 {{- with ($scratch.Get "meta") }}
     {{- delimit . "&nbsp;·&nbsp;" | safeHTML -}}
 {{- end -}}

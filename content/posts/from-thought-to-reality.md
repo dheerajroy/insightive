@@ -2,6 +2,7 @@
 date = '2026-06-24T20:39:35+05:30'
 author = 'Dheeraj'
 draft = false
+tags = ["mindset"]
 title = 'From Thought to Reality: The Self Trust Formula for Achieving Exactly What You Want'
 +++
 

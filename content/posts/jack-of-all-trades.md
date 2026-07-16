@@ -1,6 +1,7 @@
 +++
 date = '2026-06-24T21:36:00+05:30'
 draft = false
+tags = ["mindset"]
 title = 'Jack of All Trades: Why Having a Core Skill Matters More Than Picking a Side'
 author = 'Dheeraj'
 +++

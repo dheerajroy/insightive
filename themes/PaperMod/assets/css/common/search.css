@@ -1,24 +1,109 @@
-.searchbox input {
-    padding: 4px 10px;
-    width: 100%;
-    color: var(--primary);
-    font-weight: bold;
-    border: 2px solid var(--tertiary);
-    border-radius: var(--radius);
+.searchbox {
+    margin-top: var(--content-gap);
 }
 
-.searchResults li {
-    list-style: none;
-    border-radius: var(--radius);
-    padding: 10px 15px;
-    position: relative;
-    font-weight: 500;
+.search-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+.search-field {
+    flex: 1 1 320px;
+    min-width: 220px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background: var(--entry);
-    transition: transform .25s ease;
+    gap: 0.75rem;
+}
+
+.searchbox input {
+    width: 100%;
+    min-width: 0;
+    padding: 0.95rem 1rem;
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 1rem;
     border: 1px solid var(--border);
+    border-radius: calc(var(--radius) * 1.5);
+    background: var(--entry);
+    transition: border-color 0.22s ease, box-shadow 0.22s ease;
+}
+
+.searchbox input:focus {
+    outline: none;
+    border-color: rgba(79, 70, 229, 0.7);
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.1);
+}
+
+.search-count {
+    color: var(--secondary);
+    font-size: 0.95rem;
+    white-space: nowrap;
+}
+
+.search-action {
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--entry);
+    color: var(--primary);
+    padding: 0.8rem 0.95rem;
+    min-width: 52px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.22s ease, border-color 0.22s ease, background 0.22s ease;
+    cursor: pointer;
+}
+
+.search-action svg {
+    display: block;
+}
+
+.search-action:hover,
+.search-action:focus-visible {
+    transform: translateY(-1px);
+    border-color: var(--border);
+    background: var(--entry);
+    color: var(--primary);
+}
+
+.search-action:hover svg,
+.search-action:focus-visible svg {
+    stroke: var(--primary);
+}
+
+.search-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    width: 100%;
+}
+
+.search-tag {
+    border: 1px solid var(--border);
+    background: var(--entry);
+    color: var(--secondary);
+    border-radius: 999px;
+    padding: 0.65rem 0.95rem;
+    font-size: 0.88rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.22s ease, background 0.22s ease, border-color 0.22s ease, color 0.22s ease;
+}
+
+.search-tag:hover,
+.search-tag:focus-visible {
+    transform: translateY(-1px);
+    background: rgba(79, 70, 229, 0.08);
+    border-color: rgba(79, 70, 229, 0.15);
+    color: var(--primary);
+}
+
+.search-tag.active {
+    background: rgba(79, 70, 229, 0.17);
+    border-color: rgba(79, 70, 229, 0.28);
+    color: var(--primary);
 }
 
 .searchResults {
@@ -26,16 +111,64 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
+}
+
+.searchResults li {
+    list-style: none;
+    border-radius: calc(var(--radius) * 1.25);
+    padding: 1rem 1.2rem;
+    position: relative;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--entry);
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    border: 1px solid var(--border);
+    box-shadow: 0 10px 28px rgba(15, 23, 42, 0.04);
 }
 
 .searchResults li:hover,
 .searchResults li:focus-within {
     transform: translateY(-2px);
-    border-color: var(--tertiary);
+    border-color: rgba(79, 70, 229, 0.18);
+    box-shadow: 0 14px 32px rgba(15, 23, 42, 0.08);
+}
+
+.searchResults li .entry-link {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    border-radius: calc(var(--radius) * 1.25);
+}
+
+.searchResults li .search-result-title {
+    position: relative;
+    z-index: 1;
+}
+
+.searchResults li svg {
+    position: relative;
+    z-index: 1;
+    opacity: 0.7;
 }
 
 .searchResults li .entry-link:focus {
-    outline: 2px solid var(--secondary);
+    outline: 2px solid rgba(79, 70, 229, 0.7);
     outline-offset: -2px;
+}
+
+@media screen and (max-width: 720px) {
+    .search-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .search-field {
+        width: 100%;
+    }
+    .search-tags {
+        justify-content: flex-start;
+    }
 }

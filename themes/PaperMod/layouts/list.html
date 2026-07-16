@@ -52,6 +52,16 @@
 {{- end }}
 
 {{- $term := .Data.Term }}
+
+{{- if gt (len site.Taxonomies.tags) 0 }}
+<div class="tag-filter" id="tagFilter">
+  <button type="button" data-tag="" class="tag-filter-button active">All tags</button>
+  {{- range $name, $_ := site.Taxonomies.tags }}
+  <button type="button" data-tag="{{ $name }}" class="tag-filter-button">{{ $name }}</button>
+  {{- end }}
+</div>
+{{- end }}
+
 {{- range $index, $page := $paginator.Pages }}
 
 {{- $class := "post-entry" }}
@@ -60,7 +70,7 @@
 {{- $class = "post-entry tag-entry" }}
 {{- end }}
 
-<article class="{{ $class }}">
+<article class="{{ $class }}" {{ with .Params.tags }}data-tags="{{ delimit . "," }}"{{ end }}>
   {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
   {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
   <header class="entry-header">

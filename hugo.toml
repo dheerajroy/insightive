@@ -15,3 +15,8 @@ disableThemeToggle = false
 # Search Configuration
 [params.search]
 enable = true
+
+# Taxonomy
+[taxonomies]
+tag = "tags"
+category = "categories"
