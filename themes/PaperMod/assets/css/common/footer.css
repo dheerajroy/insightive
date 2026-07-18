@@ -61,3 +61,16 @@
 .top-link:hover {
     color: var(--primary);
 }
+
+.footer-by {
+    font-size: 0.68rem;
+    color: var(--secondary);
+    font-weight: 600;
+    opacity: 0.9;
+    margin-left: 0.4rem;
+}
+
+[data-theme="dark"] .footer-by {
+    color: var(--secondary);
+    opacity: 0.85;
+}

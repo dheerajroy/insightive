@@ -28,7 +28,10 @@
                 {{- else if hasPrefix site.Params.label.iconSVG "<svg" }}
                     {{ site.Params.label.iconSVG | safeHTML }}
                 {{- end -}}
-                <span class="logo-title">{{- $label_text -}}</span>
+                <div class="logo-text">
+                    <span class="logo-title">{{- $label_text -}}</span>
+                    <span class="logo-by">By Dheeraj</span>
+                </div>
             </a>
             {{- end }}
 
