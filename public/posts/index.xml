@@ -6,8 +6,23 @@
     <description>Recent content in Posts on Insightive</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Jul 2026 23:20:00 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jul 2026 21:30:00 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SOLID Principles: The Five Rules That Will Save You From Writing Code You Hate</title>
+      <link>http://localhost:1313/posts/solid/</link>
+      <pubDate>Sun, 19 Jul 2026 21:30:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/solid/</guid>
+      <description>&lt;p&gt;You know that feeling when you open a project you wrote six months ago?&lt;/p&gt;
+&lt;p&gt;You stare at the code for a minute and think,&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Who on earth wrote this?&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Then you check the Git history.&lt;/p&gt;
+&lt;p&gt;It was you.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve all had that moment.&lt;/p&gt;
+&lt;p&gt;The funny thing is that the code usually &lt;em&gt;works&lt;/em&gt;. It runs perfectly fine. The problem starts when someone asks you to add one tiny feature. Suddenly you&amp;rsquo;re changing five different files, something completely unrelated breaks, and now you&amp;rsquo;re afraid to touch anything because it feels like the whole project is held together by hope.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Your Brain Was Never Designed for Infinite Tabs</title>
       <link>http://localhost:1313/posts/your-brain-was-never-designed-for-infinite-tabs/</link>

@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="dark">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>SOLID Principles: The Five Rules That Will Save You From Writing Code You Hate | Insightive</title>
+<meta name="keywords" content="software engineering">
+<meta name="description" content="You know that feeling when you open a project you wrote six months ago?
+You stare at the code for a minute and think,
+
+&ldquo;Who on earth wrote this?&rdquo;
+
+Then you check the Git history.
+It was you.
+We&rsquo;ve all had that moment.
+The funny thing is that the code usually works. It runs perfectly fine. The problem starts when someone asks you to add one tiny feature. Suddenly you&rsquo;re changing five different files, something completely unrelated breaks, and now you&rsquo;re afraid to touch anything because it feels like the whole project is held together by hope.">
+<meta name="author" content="Dheeraj">
+<link rel="canonical" href="http://localhost:1313/posts/solid/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.292c9f1804f9b6b49ce9ce28d3f676b7f14998c7cf591c732689c6f14df20f47.css" integrity="sha256-KSyfGAT5trSc6c4o0/Z2t/FJmMfPWRxzJonG8U3yD0c=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/js/tag-filter.min.521ffa95878a49b6bfba64a03d453e944c95b3435551767e8cdb9a3da96f9fed.js" integrity="sha256-Uh/6lYeKSba/umSgPUU&#43;lEyVs0NVUXZ&#43;jNuaPalvn&#43;0="></script>
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/solid/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Insightive (Alt + H)"><div class="logo-text">
+                    <span class="logo-title">Insightive</span>
+                    <span class="logo-by">By Dheeraj</span>
+                </div>
+            </a>
+
+        </div>
+        <ul id="menu" class="menu">
+        </ul>
+        <div class="header-actions">
+            <a class="search-button header-button" href="/search/" aria-label="Search">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </a>
+            <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+                <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+            </button>
+        </div>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      SOLID Principles: The Five Rules That Will Save You From Writing Code You Hate
+    </h1>
+    <div class="post-meta">
+
+<span title='2026-07-19 21:30:00 +0530 IST'>July 19, 2026</span>&nbsp;·&nbsp;<span>Dheeraj</span>&nbsp;·&nbsp;<span class="entry-tag">software engineering</span>
+
+</div>
+  </header> 
+  <div class="post-content md-content"><p>You know that feeling when you open a project you wrote six months ago?</p>
+<p>You stare at the code for a minute and think,</p>
+<blockquote>
+<p>&ldquo;Who on earth wrote this?&rdquo;</p>
+</blockquote>
+<p>Then you check the Git history.</p>
+<p>It was you.</p>
+<p>We&rsquo;ve all had that moment.</p>
+<p>The funny thing is that the code usually <em>works</em>. It runs perfectly fine. The problem starts when someone asks you to add one tiny feature. Suddenly you&rsquo;re changing five different files, something completely unrelated breaks, and now you&rsquo;re afraid to touch anything because it feels like the whole project is held together by hope.</p>
+<p>If that sounds familiar, you&rsquo;re not a bad programmer.</p>
+<p>You just haven&rsquo;t met SOLID yet.</p>
+<p>Despite the fancy name, SOLID isn&rsquo;t some magical framework or something only senior engineers use. It&rsquo;s simply five design principles that help you write software that&rsquo;s easier to understand, easier to extend, and much harder to accidentally break.</p>
+<p>The best part?</p>
+<p>Once you understand <em>why</em> these principles exist, you&rsquo;ll start noticing them everywhere. You&rsquo;ll look at your old projects and immediately spot where things went wrong.</p>
+<p>So instead of memorizing definitions like we&rsquo;re preparing for an exam, let&rsquo;s build something together.</p>
+<p>Imagine we&rsquo;re building a restaurant management system.</p>
+<p>We&rsquo;ll keep coming back to this restaurant throughout the article, because trust me, by the end of it you&rsquo;ll never forget what SOLID stands for.</p>
+<h1 id="s-stands-for-single-responsibility-principle">S stands for Single Responsibility Principle<a hidden class="anchor" aria-hidden="true" href="#s-stands-for-single-responsibility-principle">#</a></h1>
+<p>The official definition says,</p>
+<blockquote>
+<p>A class should have one, and only one, reason to change.</p>
+</blockquote>
+<p>Sounds simple enough.</p>
+<p>But what does that actually mean?</p>
+<p>Let&rsquo;s forget code for a second.</p>
+<p>Imagine walking into a restaurant where one person is doing everything.</p>
+<p>They&rsquo;re taking orders.</p>
+<p>Cooking food.</p>
+<p>Washing dishes.</p>
+<p>Generating bills.</p>
+<p>Cleaning tables.</p>
+<p>Answering customer calls.</p>
+<p>Even fixing the WiFi when it stops working.</p>
+<p>That restaurant wouldn&rsquo;t survive a week.</p>
+<p>Not because the employee is bad.</p>
+<p>Because no one should be responsible for everything.</p>
+<p>Yet this is exactly what beginners (including me) do with classes.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Restaurant</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">cook_food</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">generate_bill</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">send_email</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">save_to_database</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">print_sales_report</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">...</span>
+</span></span></code></pre></div><p>At first glance this doesn&rsquo;t seem terrible.</p>
+<p>But imagine tomorrow the tax rules change.</p>
+<p>You edit this class.</p>
+<p>Next week you decide to switch from PostgreSQL to MongoDB.</p>
+<p>You edit the same class.</p>
+<p>A month later your email template changes.</p>
+<p>Again&hellip;</p>
+<p>The same class.</p>
+<p>Notice the pattern?</p>
+<p>This class has way too many reasons to change.</p>
+<p>Instead, split the responsibilities.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Chef</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">cook</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BillingService</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">generate_bill</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">EmailService</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">send_receipt</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">RestaurantRepository</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">save</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">...</span>
+</span></span></code></pre></div><p>Now each class has one clear responsibility.</p>
+<p>If billing changes, you know exactly where to look.</p>
+<p>If the database changes, you aren&rsquo;t touching your email code.</p>
+<p>Life suddenly becomes much simpler.</p>
+<p>A good question I like asking myself is this:</p>
+<blockquote>
+<p>&ldquo;If I had to hire employees for this class, how many job titles would they have?&rdquo;</p>
+</blockquote>
+<p>If the answer is more than one, your class probably has too many responsibilities.</p>
+<h1 id="o-stands-for-open-closed-principle">O stands for Open Closed Principle<a hidden class="anchor" aria-hidden="true" href="#o-stands-for-open-closed-principle">#</a></h1>
+<p>This one confused me the first time I heard it.</p>
+<p>How can something be open and closed at the same time?</p>
+<p>The definition is:</p>
+<blockquote>
+<p>Open for extension, closed for modification.</p>
+</blockquote>
+<p>Let&rsquo;s use payments as an example.</p>
+<p>Your restaurant initially accepts only cash.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">pay</span>(method):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> method <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;cash&#34;</span>:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Cash payment successful&#34;</span>)
+</span></span></code></pre></div><p>Everything works.</p>
+<p>Then customers ask for card payments.</p>
+<p>So you modify the function.</p>
+<p>A few weeks later everyone starts paying with UPI.</p>
+<p>Modify it again.</p>
+<p>Then someone wants PayPal.</p>
+<p>Modify it again.</p>
+<p>Then Apple Pay.</p>
+<p>Then Google Pay.</p>
+<p>Eventually your function starts looking like this.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> method <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;cash&#34;</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> method <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;card&#34;</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> method <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;upi&#34;</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> method <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;paypal&#34;</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> method <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;applepay&#34;</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> method <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;googlepay&#34;</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">...</span>
+</span></span></code></pre></div><p>Every new payment method forces you to reopen old code.</p>
+<p>That&rsquo;s risky.</p>
+<p>What if you accidentally break cash payments while adding UPI?</p>
+<p>Instead, think differently.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Payment</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">pay</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">pass</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Cash</span>(Payment):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">pay</span>(self):
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Cash payment&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Card</span>(Payment):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">pay</span>(self):
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Card payment&#34;</span>)
+</span></span></code></pre></div><p>Now your checkout doesn&rsquo;t care how someone pays.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">checkout</span>(payment: Payment):
+</span></span><span style="display:flex;"><span>    payment<span style="color:#f92672">.</span>pay()
+</span></span></code></pre></div><p>Tomorrow someone invents the next revolutionary payment system.</p>
+<p>You don&rsquo;t touch <code>checkout()</code>.</p>
+<p>You simply create another class.</p>
+<p>That&rsquo;s it.</p>
+<p>You&rsquo;re extending the application instead of modifying existing code.</p>
+<p>That&rsquo;s the entire principle.</p>
+<h1 id="l-stands-for-liskov-substitution-principle">L stands for Liskov Substitution Principle<a hidden class="anchor" aria-hidden="true" href="#l-stands-for-liskov-substitution-principle">#</a></h1>
+<p>If there&rsquo;s one principle people memorize without actually understanding, it&rsquo;s this one.</p>
+<p>Even the name sounds intimidating.</p>
+<p>But the idea is surprisingly simple.</p>
+<p>Suppose I tell you,</p>
+<p>&ldquo;Bring me any bird.&rdquo;</p>
+<p>You bring a pigeon.</p>
+<p>Great.</p>
+<p>You bring a sparrow.</p>
+<p>Also fine.</p>
+<p>Then you bring a penguin.</p>
+<p>Still a bird, right?</p>
+<p>Now imagine my program assumes every bird can fly.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Bird</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fly</span>(self):
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Flying&#34;</span>)
+</span></span></code></pre></div><p>Then someone creates this.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Penguin</span>(Bird):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fly</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">Exception</span>(<span style="color:#e6db74">&#34;Penguins can&#39;t fly&#34;</span>)
+</span></span></code></pre></div><p>Now somewhere else in the application&hellip;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>bird <span style="color:#f92672">=</span> Penguin()
+</span></span><span style="display:flex;"><span>bird<span style="color:#f92672">.</span>fly()
+</span></span></code></pre></div><p>Crash.</p>
+<p>The parent class made a promise.</p>
+<p>The child class broke it.</p>
+<p>That&rsquo;s exactly what Liskov Substitution is trying to prevent.</p>
+<p>If a class inherits from another class, it should behave in a way that doesn&rsquo;t surprise the rest of the program.</p>
+<p>A better design would be this.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Bird</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">pass</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FlyingBird</span>(Bird):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fly</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Penguin</span>(Bird):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">swim</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">...</span>
+</span></span></code></pre></div><p>Now nobody expects penguins to fly.</p>
+<p>No broken promises.</p>
+<p>No weird exceptions.</p>
+<h1 id="i-stands-for-interface-segregation-principle">I stands for Interface Segregation Principle<a hidden class="anchor" aria-hidden="true" href="#i-stands-for-interface-segregation-principle">#</a></h1>
+<p>This one sounds complicated.</p>
+<p>It&rsquo;s actually something you&rsquo;ve probably experienced outside programming.</p>
+<p>Imagine buying a TV remote.</p>
+<p>All you want is to turn the TV on, change channels, and adjust the volume.</p>
+<p>Instead, the remote has 94 buttons.</p>
+<p>Half of them control features you&rsquo;ve never even heard of.</p>
+<p>You spend five minutes trying to find the volume button.</p>
+<p>That&rsquo;s a bad interface.</p>
+<p>Software can have the same problem.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Worker</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">code</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">design</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">cook</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">clean</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">...</span>
+</span></span></code></pre></div><p>Now imagine you&rsquo;re creating a backend developer.</p>
+<p>Why should they implement <code>cook()</code>?</p>
+<p>It makes no sense.</p>
+<p>Instead, keep interfaces small and focused.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Coder</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">code</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Designer</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">design</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">...</span>
+</span></span></code></pre></div><p>Each class only implements what it actually needs.</p>
+<p>No unnecessary methods.</p>
+<p>No empty functions.</p>
+<p>No exceptions saying &ldquo;Not Implemented.&rdquo;</p>
+<p>If you&rsquo;re forcing a class to implement methods it never uses, it&rsquo;s usually a sign your interface is trying to do too much.</p>
+<h1 id="d-stands-for-dependency-inversion-principle">D stands for Dependency Inversion Principle<a hidden class="anchor" aria-hidden="true" href="#d-stands-for-dependency-inversion-principle">#</a></h1>
+<p>This is probably my favorite one because once it clicks, you&rsquo;ll start seeing it everywhere.</p>
+<p>Let&rsquo;s go back to our restaurant.</p>
+<p>Suppose your restaurant hires an Italian chef.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ItalianChef</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">cook</span>(self):
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Pasta&#34;</span>)
+</span></span></code></pre></div><p>Then your restaurant looks like this.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Restaurant</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self):
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>chef <span style="color:#f92672">=</span> ItalianChef()
+</span></span></code></pre></div><p>Everything works.</p>
+<p>Until your chef resigns.</p>
+<p>Now your restaurant is tightly coupled to one specific chef.</p>
+<p>Instead, depend on the role.</p>
+<p>Not the person.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Chef</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">cook</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">pass</span>
+</span></span></code></pre></div><p>Now anyone can become the chef.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ItalianChef</span>(Chef):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">cook</span>(self):
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Pasta&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">IndianChef</span>(Chef):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">cook</span>(self):
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Biryani&#34;</span>)
+</span></span></code></pre></div><p>Your restaurant changes slightly.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Restaurant</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self, chef: Chef):
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>chef <span style="color:#f92672">=</span> chef
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">serve</span>(self):
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>chef<span style="color:#f92672">.</span>cook()
+</span></span></code></pre></div><p>Today&rsquo;s chef could be Italian.</p>
+<p>Tomorrow it could be Indian.</p>
+<p>Next week it could be Mexican.</p>
+<p>The restaurant doesn&rsquo;t care.</p>
+<p>It only knows one thing.</p>
+<p>&ldquo;I need someone who can cook.&rdquo;</p>
+<p>That&rsquo;s Dependency Inversion.</p>
+<p>Depend on abstractions.</p>
+<p>Not concrete implementations.</p>
+<p>If that sentence ever confuses you, just remember the restaurant hiring a <strong>Chef</strong>, not hiring <strong>John</strong>.</p>
+<h1 id="so-do-i-need-to-use-solid-everywhere">So&hellip; do I need to use SOLID everywhere?<a hidden class="anchor" aria-hidden="true" href="#so-do-i-need-to-use-solid-everywhere">#</a></h1>
+<p>No.</p>
+<p>If you&rsquo;re writing a quick Python script that renames a hundred files, applying all five principles would probably make the solution longer than the problem itself.</p>
+<p>SOLID starts becoming valuable when your software grows.</p>
+<p>When there are multiple developers.</p>
+<p>When features keep getting added.</p>
+<p>When requirements change every week.</p>
+<p>That&rsquo;s when these principles quietly save you from turning your project into a giant ball of spaghetti.</p>
+<p>They&rsquo;re not rules.</p>
+<p>They&rsquo;re guidelines.</p>
+<p>Sometimes you&rsquo;ll follow every single one.</p>
+<p>Sometimes you&rsquo;ll intentionally break one because the simpler solution is actually the better solution.</p>
+<p>That&rsquo;s completely fine.</p>
+<p>The goal isn&rsquo;t to impress other developers.</p>
+<p>The goal is to make your code easier to work with.</p>
+<h1 id="final-thoughts">Final Thoughts<a hidden class="anchor" aria-hidden="true" href="#final-thoughts">#</a></h1>
+<p>The biggest lesson I learned from SOLID wasn&rsquo;t how to write &ldquo;better&rdquo; code.</p>
+<p>It was learning that good software isn&rsquo;t about being clever.</p>
+<p>It&rsquo;s about being predictable.</p>
+<p>When someone opens your code six months later, they shouldn&rsquo;t have to solve a mystery.</p>
+<p>They should be able to look at a class and immediately understand what it does.</p>
+<p>They should be able to add a feature without worrying about breaking something on the other side of the project.</p>
+<p>And most importantly&hellip;</p>
+<p>Future you should be thankful that past you cared enough to keep things simple.</p>
+<p>Because sooner or later, you&rsquo;ll open one of your old projects again.</p>
+<p>When that day comes, I hope your first thought isn&rsquo;t,</p>
+<blockquote>
+<p>&ldquo;Who wrote this mess?&rdquo;</p>
+</blockquote>
+<p>I hope it&rsquo;s,</p>
+<blockquote>
+<p>&ldquo;Oh&hellip; this actually makes sense.&rdquo;</p>
+</blockquote>
+
+
+  </div><section class="post-suggestions">
+    <div class="suggestions-header">
+      <span class="suggestions-title">Recommended reading</span>
+    </div>
+    <article class="post-entry suggestion-card">
+      <header class="entry-header">
+        <h2 class="entry-hint-parent">Your Brain Was Never Designed for Infinite Tabs</h2>
+      </header>
+      <div class="entry-content">
+        <p>There was a time when boredom was unavoidable.
+You stood in queues staring into space. You looked out of the car window during long drives. You sat on your bed doing absolutely …</p>
+      </div>
+      <footer class="entry-footer">
+
+<span title='2026-07-15 23:20:00 +0530 IST'>July 15, 2026</span>&nbsp;·&nbsp;<span>Dheeraj</span>&nbsp;·&nbsp;<span class="entry-tag">mindset</span></footer>
+      <a class="entry-link" href="http://localhost:1313/posts/your-brain-was-never-designed-for-infinite-tabs/"></a>
+    </article>
+  </section>
+
+  <footer class="post-footer">
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">Insightive</a></span>
+    <span class="footer-by">By Dheeraj</span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
